@@ -1,0 +1,258 @@
+/* General Styles */
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    font-family: 'Arial', sans-serif; 
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    padding-top: 56px;
+    background-color: #f7f9f5;  
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: #ffffff; 
+    padding: 10px 20px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+.navbar-brand {
+    font-weight: bold; 
+    font-size: 24px; 
+    color: #16423C; 
+}
+
+.navbar-brand:hover {
+    color: #1A5E47; 
+}
+
+.nav-link {
+    font-size: 18px; 
+    color: #16423C; 
+    margin: 0 15px; 
+    font-weight: 500; 
+    transition: color 0.3s; 
+}
+
+.nav-link:hover {
+    color: #1A5E47; 
+    text-decoration: underline; 
+}
+
+/* Navbar Toggler Styles */
+.navbar-toggler {
+    border-color: #16423C; 
+}
+
+.navbar-toggler-icon {
+    background-color: #16423C; 
+}
+
+/* Active link style */
+.nav-item.active .nav-link {
+    color: #1A5E47; 
+    font-weight: bold; 
+    text-decoration: underline; 
+}
+
+/* Hero Section Styles */
+#heroCarousel {
+    position: relative;
+}
+
+.carousel-item {
+    height: 600px; 
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    background-color: #A8D8B9; 
+}
+
+.carousel-item h2 {
+    font-size: 48px;
+    font-weight: bold;
+    color: #fff; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); 
+}
+
+.carousel-item p {
+    font-size: 20px; 
+    color: #fff; 
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7); 
+}
+
+.carousel-item .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.timer {
+    font-size: 18px; 
+    color: #ffcc00; 
+    margin-bottom: 20px; 
+}
+
+.btn-read-more {
+    background-color: #16423C; 
+    color: #fff; 
+    padding: 10px 20px; 
+    font-size: 18px; 
+    border-radius: 5px; 
+    border: none; 
+    transition: background-color 0.3s; 
+}
+
+.btn-read-more:hover {
+    background-color: #1A5E47; 
+}
+
+/* Carousel Control Styles */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #fff; 
+}
+
+.carousel-indicators li {
+    background-color: #fff; 
+}
+
+#number-animation {
+    background-color: #f8f9fa; 
+}
+
+.number-box {
+    margin: 20px;
+}
+
+.count {
+    font-size: 48px; 
+    font-weight: bold; 
+    color: #16423C; 
+}
+
+p {
+    font-size: 18px; 
+    color: #333; 
+}
+
+/* Recipe Section Styles */
+#recipes {
+    background-color: #ffffff; 
+}
+
+.card {
+    margin-bottom: 30px; 
+    border: 1px solid #e2e2e2; 
+}
+
+.card-title {
+    font-size: 20px;
+    font-weight: bold; 
+    color: #16423C; 
+}
+
+.card-text {
+    font-size: 16px; 
+}
+
+/* Blog Section Styles */
+#blog {
+    background-color: #f8f9fa; 
+}
+
+.card-title {
+    font-size: 20px;
+    font-weight: bold; 
+    color: #16423C; 
+}
+
+.card-text {
+    font-size: 16px; 
+}
+
+/* About Section Styles */
+#about {
+    background-color: #ffffff; 
+    padding: 30px 0; 
+}
+
+#about p {
+    font-size: 18px; 
+}
+
+/* Contact Section Styles */
+#contact {
+    background-color: #f8f9fa; 
+}
+
+.form-control {
+    margin-bottom: 20px; 
+}
+
+/* Footer Styles */
+footer {
+    background-color: #24675e; 
+    color: #fff; 
+    padding: 20px 0; 
+}
+
+
+/* Animation for fading in elements */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Button hover animation */
+.btn-read-more, .btn-primary, .btn-secondary {
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-read-more:hover, .btn-primary:hover, .btn-secondary:hover {
+    transform: scale(1.05);
+}
+
+/* Number counter animation */
+.number-box {
+    transition: transform 0.3s ease;
+}
+
+.number-box:hover {
+    transform: scale(1.1);
+}
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .carousel-item h2 {
+        font-size: 36px; 
+    }
+
+    .carousel-item p {
+        font-size: 18px; 
+    }
+
+    .btn-read-more, .btn-primary, .btn-secondary {
+        font-size: 16px; 
+    }
+}

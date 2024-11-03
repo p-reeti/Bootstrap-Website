@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vegan Recipe Collection</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Navigation Bar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="#">
+            <img src="images/logo (2).png" alt="Logo" width="30" height="30" class="d-inline-block align-top">
+            Veggie
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#recipes">Recipes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#blog">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero Section with Slider -->
+<div id="heroCarousel" class="carousel slide" data-ride="carousel" data-interval="3000">
+    <div class="carousel-inner">
+        <div class="carousel-item active" style="background-image: url('images/desert.jpg');">
+            <div class="overlay">
+                <h2>50% Off on Vegan Desserts!</h2>
+                <p>Indulge in our delicious vegan desserts, now at half price for a limited time!</p>
+                <a href="#" class="btn btn-read-more">Read More</a>
+            </div>
+        </div>
+        <div class="carousel-item" style="background-image: url('images/slide2.jpg');">
+            <div class="overlay">
+                <h2>Exclusive Discount on Meal Plans!</h2>
+                <p>Sign up for our meal plans and get 20% off your first order!</p>
+                <a href="#" class="btn btn-read-more">Read More</a>
+            </div>
+        </div>
+        <div class="carousel-item" style="background-image: url('images/taco.jpg');">
+            <div class="overlay">
+                <div class="timer">Ends in: 04:00</div>
+                <h2>Recipe of the Week: Vegan Tacos</h2>
+                <p>Try our mouthwatering vegan tacos, loaded with flavor and nutrients!</p>
+                <a href="#" class="btn btn-read-more">Read More</a>
+            </div>
+        </div>
+    </div>
+    <a class="carousel-control-prev" href="#heroCarousel" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#heroCarousel" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+    <ol class="carousel-indicators">
+        <li data-target="#heroCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#heroCarousel" data-slide-to="1"></li>
+        <li data-target="#heroCarousel" data-slide-to="2"></li>
+    </ol>
+</div>
+
+<!-- Number Animation Section -->
+<section id="number-animation" class="py-5 bg-light text-center">
+    <div class="container">
+        <h2>Our Achievements</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="number-box">
+                    <h3 class="count" data-target="1000">0+</h3>
+                    <p>Recipes Created</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="number-box">
+                    <h3 class="count" data-target="5000">0+</h3>
+                    <p>Happy Customers</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="number-box">
+                    <h3 class="count" data-target="150">0+</h3>
+                    <p>Blog Posts</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Recipe Section -->
+<section id="recipes" class="py-5">
+    <div class="container">
+        <h2 class="text-center">Popular Recipes</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="images/pasta.jpg" class="card-img-top" alt="Recipe 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Vegan Pasta</h5>
+                        <p class="card-text">Delicious and creamy vegan pasta made with fresh ingredients.</p>
+                        <a href="#" class="btn btn-primary">View Recipe</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="images/pizza.jpg" class="card-img-top" alt="Recipe 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Vegan Pizza</h5>
+                        <p class="card-text">A mouthwatering vegan pizza with a variety of toppings.</p>
+                        <a href="#" class="btn btn-primary">View Recipe</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="images/slide3.jpg" class="card-img-top" alt="Recipe 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Vegan Salad</h5>
+                        <p class="card-text">A refreshing salad loaded with nutrients and flavor.</p>
+                        <a href="#" class="btn btn-primary">View Recipe</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Blog Section -->
+<section id="blog" class="py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center">Latest Blog Posts</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="images/slide1.jpg" class="card-img-top" alt="Blog 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Benefits of Veganism</h5>
+                        <p class="card-text">Discover the health benefits of adopting a vegan lifestyle.</p>
+                        <a href="#" class="btn btn-secondary">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="images/slide5.jpg" class="card-img-top" alt="Blog 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Vegan Cooking Tips</h5>
+                        <p class="card-text">Tips and tricks for mastering vegan cooking.</p>
+                        <a href="#" class="btn btn-secondary">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="images/slide4.jpg" class="card-img-top" alt="Blog 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Vegan Meal Prep</h5>
+                        <p class="card-text">How to prepare delicious vegan meals for the week.</p>
+                        <a href="#" class="btn btn-secondary">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- About Section -->
+<section id="about" class="py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h2>About Us</h2>
+                <p>Welcome to Vegan Recipe Collection! We’re excited to have you here. Our mission is to inspire you to create delicious and healthy vegan meals that nourish your body and soul. Whether you're a seasoned vegan or just curious about plant-based cooking, there's something for everyone.</p>
+                
+                <p>Explore our diverse range of easy-to-follow recipes designed for all skill levels, from quick weeknight dinners to delightful dishes for special occasions. But we're not just about recipes; we’re a community of food lovers sharing tips and inspiration along the way.</p>
+                
+                <p>So, grab your apron, dive into our recipes, and join us on this tasty adventure towards a healthier lifestyle. Welcome to the Vegan Recipe Collection family!</p>
+            </div>
+            
+            <div class="col-md-6">
+                <img src="images/cook.jpg" class="img-fluid" alt="About Us Image">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center">Contact Us</h2>
+        <form>
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email address</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea class="form-control" id="message" rows="4" placeholder="Enter your message" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+</section>
+
+<!-- Footer Section -->
+<footer class="text-white text-center py-3">
+    <div class="container">
+        <p>&copy; 2024 Veggie Collection. All rights reserved.</p>
+    </div>
+</footer>
+
+<!-- Include Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="script.js"></script> 
+</body>
+</html>
